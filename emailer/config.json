@@ -1,0 +1,31 @@
+{
+  "required": [
+    {
+      "prompt": "enter your smtp server",
+      "default": "smtp.gmail.com:587",
+      "key": "SMTP_SERVER"
+    },
+    {
+      "prompt": "enter the email you'll be sending from",
+      "key": "SMTP_EMAIL"
+    },
+    {
+      "prompt": "enter your email password",
+      "key": "SMTP_PASSWORD"
+    },
+    {
+      "prompt": "email where test emails should be sent",
+      "key": "EMAIL_DRY_RUNS_TO"
+    },
+    { "prompt": "json file containing extra template {{values}}",
+      "default": "template_params.json",
+      "key": "TEMPLATE_PARAMS"
+    }
+  ],
+  "nullable": [
+    {
+      "prompt": "email(s) that will always be cc'ed (separate emails w commas)",
+      "key": "EMAIL_BASE_CC"
+    }
+  ]
+}
